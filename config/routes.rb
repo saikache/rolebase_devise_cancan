@@ -1,4 +1,7 @@
 RolebaseDeviseCancan::Application.routes.draw do
+  resources :uploads
+
+
   devise_for :users , :controllers => {:registrations => "registrations"}
 
   get "home/index"
