@@ -14,3 +14,15 @@
 //= require jquery_ujs
 //= require twitter/bootstrap
 //= require_tree .
+
+
+$(document).ready(function () {
+	window.setTimeout(function() {
+		$(".alert").fadeTo(1500, 0).slideUp(500, function(){
+		$(this).remove();
+		});
+	}, 2000);
+	$(".close").click(function(){
+	$("#myAlert").alert();
+	});
+});
