@@ -42,7 +42,7 @@ RolebaseDeviseCancan::Application.configure do
     :port => 587,
     :domain => '22222.com',
     :user_name => 'postmaster@sandbox67227.mailgun.org',
-    :password => 'venkat1212',
+    :password => 'xx2',
     :authentication => 'plain',
     :enable_starttls_auto => true
   }
