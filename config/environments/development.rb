@@ -34,4 +34,16 @@ RolebaseDeviseCancan::Application.configure do
 
   # Expands the lines which load the assets
   config.assets.debug = true
+
+  config.action_mailer.default_url_options = { :host => 'localhost:3000' }
+
+  config.action_mailer.smtp_settings = {
+    :address => "smtp.mailgun.org",
+    :port => 587,
+    :domain => '22222.com',
+    :user_name => 'postmaster@sandbox67227.mailgun.org',
+    :password => 'venkat1212',
+    :authentication => 'plain',
+    :enable_starttls_auto => true
+  }
 end
