@@ -19,3 +19,16 @@ class RegistrationsController <  Devise::RegistrationsController
 		super
 	end
 end
+
+
+
+# for rails 4 your have to permit the additional parameters...
+  #before_filter :configure_permitted_parameters
+  #protected
+
+  #def configure_permitted_parameters
+  #  devise_parameter_sanitizer.for(:sign_up) do |u|
+  #    u.permit(:name,
+  #      :email, :password, :password_confirmation)
+  #  end
+  #end
